@@ -19,7 +19,7 @@ Route::get('/import', 'ImportController@test');
 Route::Resource('/posts', 'PostController');
 Route::get('/map','MapController@test')->name('map.test');*/
 
-Route::get('/test', 'PostController@test' );
+
 Route::get('/{any}', function () {
     return view('post');
 })->where('any', '.*');

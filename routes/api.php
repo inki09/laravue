@@ -20,4 +20,5 @@ Route::namespace('Api')->group(function (){
     Route::get('/supplierInfo', 'SupplierInfoController@getInfo');
     Route::post('supplierInfo/{id}', 'SupplierInfoController@editInfo' );
     Route::apiResource('publication', 'PublicationsController');
+    Route::apiResource('post','PostController');
 });
